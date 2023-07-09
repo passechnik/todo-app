@@ -5,7 +5,7 @@ import { TodoList } from "./TodoList"
 export default function App() {
   const [todos, setTodos] = useState([])
 
-  function addTodo(title) {
+  function addTodo(newItem) {
     setTodos(currentTodos => {
       return [
           ...currentTodos,
