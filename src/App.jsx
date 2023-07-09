@@ -5,13 +5,13 @@ import { TodoList } from "./TodoList"
 export default function App() {
   const [todos, setTodos] = useState([])
 
-  function addTodo(newItem) {
+  function addTodo(title) {
     setTodos(currentTodos => {
       return [
           ...currentTodos,
           {
               id: crypto.randomUUID(),
-              title: newItem, completed: false
+              title, completed: false
           },
       ]
   })
